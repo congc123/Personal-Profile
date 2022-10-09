@@ -19,3 +19,15 @@ function linkAction(){
     navMenu.classList.remove('show')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2000,
+    delay: 200,
+});
+
+sr.reveal('.home_data, .about_img, .skills_subtitle, .skills_text',{}); 
+sr.reveal('.home_img, .about_subtitle, .about_text, .skills_img',{delay: 400}); 
+sr.reveal('.home_social_icon',{ interval: 200}); 
+sr.reveal('.skills_data, .work_img, .contact_input',{interval: 200}); 
